@@ -18,7 +18,12 @@ public class NewBaby extends Baby implements Describeable{
     }
 
     @Override
-    public void say(NewMove.RobberMove.Robber rob1, NewMove.RobberMove.Robber rob2){
-        System.out.println("Малыш " + this.toString() + "хочет поглядеть на жуликов");
+    public boolean talk(){
+        if (Math.random() < 0.4) {
+            System.out.println("Малыш " + this.toString() + " хочет поглядеть на жуликов\n");
+            return true;
+        } else {
+           return false;
+        }
     }
 }

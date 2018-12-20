@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="CarlsonLib">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/CarlsonLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/CarlsonLib.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

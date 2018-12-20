@@ -1,7 +1,7 @@
 package CarlsonProject2;
 import CarlsonProject.*;
 
-public class NewCarlson extends Carlson{
+public class NewCarlson extends Carlson implements Describeable{
     private double speakVolume;
 
     public NewCarlson(String name, double volume){
@@ -15,5 +15,15 @@ public class NewCarlson extends Carlson{
 
     public double getSpeakVolume(){
         return this.speakVolume;
+    }
+
+    @Override
+    public boolean talk(){
+        if (Math.random() < 0.5) {
+            System.out.println(this.toString() + " говорит о жуликах\n");
+            return true;
+        } else {
+           return false;
+        }
     }
 }

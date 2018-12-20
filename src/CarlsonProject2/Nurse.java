@@ -24,7 +24,7 @@ public class Nurse implements Talkable{
         return this.isVisible;
     }
 
-    public boolean hear(int volume){
+    public boolean hear(double volume){
         say("hear");
         if (volume >= this.HEARNESS){
             say("heard");
@@ -43,15 +43,15 @@ public class Nurse implements Talkable{
     public void say(String what){
         switch (what){
             case "hear":
-                System.out.println(this.name + "няня прислушивается");
+                System.out.println(this.name + " Няня прислушивается");
                 break;
 
-            case "hesrd":
-                System.out.println(this.name + "няня услышала голоса");
+            case "heard":
+                System.out.println(this.name + " Няня услышала голоса\nОни были достаточно громкими");
                 break;
 
             case "unheard":
-                System.out.println(this.name + "няня не услышала голоса");
+                System.out.println(this.name + " Няня не услышала голоса");
                 break;
         }
     }
@@ -59,7 +59,7 @@ public class Nurse implements Talkable{
     @Override
     public void printStatus(){
         if (!isVisible){
-            System.out.println(this.name + "няня спряталась");
+            System.out.println(this.name + " Няня спряталась за трубу\n");
         }
     }
 }
