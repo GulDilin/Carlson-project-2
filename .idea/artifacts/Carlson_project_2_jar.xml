@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Carlson-project-2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Carlson_project_2_jar</output-path>
+    <root id="archive" name="Carlson-project-2.jar">
+      <element id="module-output" name="Carlson-project-2" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/CarlsonLib.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
